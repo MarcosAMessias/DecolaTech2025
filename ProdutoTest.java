@@ -8,7 +8,7 @@ public class ProdutoTest {
 
     @Test
     public void testFalso() {
-
+        Produto produto = save(produto);
         assertTrue(True);
     }
 }
