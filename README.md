@@ -28,7 +28,7 @@ classDiagram
         +string description
     }
     
-    Usuario *--> Conta : possui
-    Usuario *--> Cartao : possui
-    Usuario *--> "0..*" Feature : possui
-    Usuario *--> "0..*" Noticia : possui
+    Usuario "1"*--"1" Conta : possui
+    Usuario "1"*--"N" Cartao : possui
+    Usuario "1"*--"1" Feature : possui
+    Usuario "1"*--> "N" Noticia : possui
